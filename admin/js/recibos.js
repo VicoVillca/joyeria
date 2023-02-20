@@ -10,7 +10,7 @@ $("#suggesstion-box").hide();
 }
 // Add Record
 function addRecord() {
-    console.log("funcion add record");
+    console.log("Saludos para git ");
     // get values
     var idCliente = $("#hidden-search-box-id").val();
     console.log(idCliente);
