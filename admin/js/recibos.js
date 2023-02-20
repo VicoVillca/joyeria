@@ -17,6 +17,7 @@ function addRecord() {
     var porConcepto = $("#porconcepto").val();
     console.log(porConcepto);
     var nombre = $("#nombre").val();
+    console.log(nombre);
     var apPaterno = $("#ap_paterno").val();
     var apMaterno = $("#ap_materno").val();
     var calificacion = $("#calificacion").val();
