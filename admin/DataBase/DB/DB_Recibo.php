@@ -70,7 +70,7 @@ class DB_Recibo
         $fecha = '2021-08-02';
         // Preparar la sentencia
         $sentencia = Database::getInstance()->getDb()->prepare($comando);
-		$sentencia->execute(array($idAdmin, $idCliente,$tipo, $porConcepto, $total, $aCuenta, $saldo,$fecha,$fechaEntrega,$descripcion,$ganancia, $estado));
+		$sentencia->execute(array($idAdmin, $idCliente,$tipo, (double)$porConcepto, (double)$total, (double)$aCuenta, $saldo,$fecha,$fechaEntrega,$descripcion,(double)$ganancia, $estado));
         return $sentencia;
 
     }

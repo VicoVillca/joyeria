@@ -10,19 +10,23 @@ function selectCountry(id, val) {
 }
 // Add Record
 function addRecord() {
-  console.log("Saludos para git ");
   // get values
   var idCliente = $("#hidden-search-box-id").val();
-  console.log(idCliente);
+    console.log("idcliente:"+idCliente);
   var porConcepto = $("#porconcepto").val();
-  console.log(porConcepto);
+  console.log("porConcepto:"+porConcepto);
   var total = $("#total").val();
-  var saldo = $("#saldo").val();
-  var fechaEntrega = $("#fecha_entrega");
-  console.log(total);
+  console.log("total:"+total);
   var aCuenta = $("#a_cuenta").val();
+  console.log("acuenta:"+aCuenta);
+  var saldo = $("#saldo").val();
+  console.log("saldo:"+saldo);
+  var fechaEntrega = $("#fecha_entrega");
+  console.log("fechaEntrega:"+fechaEntrega.value);
+
   var ganancia = $("#ingreso").val();
-  var descripcion = $("#descripcion").val();
+  console.log("ganancia:"+ganancia);
+
   // Add record
   $.post(
     "DataBase/adm_recibo.php",
@@ -34,12 +38,10 @@ function addRecord() {
       total: total,
       aCuenta: aCuenta,
       saldo: saldo,
-      fechEntrega: fechaEntrega,
+      fechEntrega: "2021-08-03",
       descripcion: "descriop",
       ganancia: ganancia,
-      estado: 'pendiente',
-      
-      
+      estado: "pendiente",
       idAdmin: $("#hidden_id_admin").val(),
       token: $("#hidden_token").val(),
     },
