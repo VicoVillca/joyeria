@@ -137,7 +137,7 @@ include("include/head.php");
                             </div>
                             <div class="col-md-3">
                                 <label><strong>Fecha Entrega:</strong></label>
-                                <input type="date" id="start" name="trip-start">
+                                <input type="date" id="fecha_entrega" name="trip-start">
 
                             </div>
                             <div class="col-md-6">

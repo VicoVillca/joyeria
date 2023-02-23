@@ -147,7 +147,8 @@ if (!empty($_POST['_metod'])) {
 					print json_encode(
 						array(
 							'estado' => 2,
-							'mensaje' => 'Creación fallida')
+							'mensaje' => 'Creación fallida',
+							'data' => $retorno)
 					);
 				}
 			}
